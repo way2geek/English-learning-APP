@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:title="首页"
+            android:icon="@drawable/table_bar_home_normal"
+            android:id="@+id/btn1"/>
+    <item
+            android:title="训练"
+            android:id="@+id/btn2"
+            android:icon="@drawable/table_bar_train_normal"/>
+    <item
+            android:title="我的"
+            android:id="@+id/btn3"
+            android:icon="@drawable/table_bar_mine_normal"/>
+
+</menu>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/bottom_menu"
+            app:startDestination="@id/btn1">
+    <fragment android:id="@+id/btn1" android:name="com.example.project_navigation.fragment.Fragment_menu"
+              android:label="fragment_menu" tools:layout="@layout/fragment_menu"/>
+    <fragment android:id="@+id/btn3" android:name="com.example.project_navigation.fragment.Fragment_mine"
+              android:label="fragment_mine" tools:layout="@layout/fragment_mine"/>
+    <fragment android:id="@+id/btn2" android:name="com.example.project_navigation.fragment.Fragment_listening"
+              android:label="fragment_listening" tools:layout="@layout/fragment_listening"/>
+</navigation>

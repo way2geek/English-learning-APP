@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".fragment.Fragment_listening">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    >
+        <TextView
+                android:text="今日更新"
+                android:layout_width="202dp"
+                android:layout_height="64dp"
+                android:id="@+id/textView17" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp" android:layout_marginTop="56dp"
+                app:layout_constraintTop_toTopOf="parent" android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" android:textSize="30sp"/>
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/imageButton" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/imageButton3" android:layout_marginEnd="8dp"
+                app:layout_constraintHorizontal_bias="0.5"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="@+id/guideline4"
+                android:src="@drawable/ted1"/>
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+                android:src="@drawable/ted3"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/textView15"/>
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:src="@drawable/ted2"
+                android:id="@+id/imageButton3" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintStart_toEndOf="@+id/imageButton"
+                app:layout_constraintHorizontal_bias="0.5"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="@+id/guideline4"/>
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:src="@drawable/ted4"
+                android:id="@+id/imageButton4"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@+id/imageButton2"
+                app:layout_constraintHorizontal_bias="0.5" app:layout_constraintBottom_toTopOf="@+id/textView16"
+                android:layout_marginBottom="8dp"/>
+        <TextView
+                android:text="Ted讲座-生命感知"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView12"
+                app:layout_constraintStart_toStartOf="@+id/imageButton"
+                app:layout_constraintEnd_toEndOf="@+id/imageButton" app:layout_constraintHorizontal_bias="0.505"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        />
+        <TextView
+                android:text="Ted讲座-快速成长"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView14" app:layout_constraintStart_toStartOf="@+id/imageButton3"
+                app:layout_constraintEnd_toEndOf="@+id/imageButton3" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/imageButton3"/>
+        <TextView
+                android:text="Ted讲座-找到合适的机会"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView15" app:layout_constraintEnd_toEndOf="@+id/imageButton2"
+                app:layout_constraintStart_toStartOf="@+id/imageButton2"
+                app:layout_constraintBottom_toTopOf="@+id/guideline8"
+        />
+        <TextView
+                android:text="Ted讲座-伟人"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView16" app:layout_constraintStart_toStartOf="@+id/imageButton4"
+                app:layout_constraintEnd_toEndOf="@+id/imageButton4"
+                app:layout_constraintBottom_toTopOf="@+id/guideline8"/>
+        <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content" android:id="@+id/guideline4"
+                                                    app:layout_constraintGuide_begin="210dp"
+                                                    android:orientation="horizontal"/>
+        <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content" android:id="@+id/guideline8"
+                                                    app:layout_constraintGuide_begin="462dp"
+                                                    android:orientation="horizontal"/>
+        <Button
+                android:text="更多"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:background="#FFFFFF"
+                android:layout_marginTop="44dp" app:layout_constraintTop_toTopOf="@+id/guideline8"
+                android:layout_marginEnd="16dp" app:layout_constraintEnd_toEndOf="parent"
+                android:textColor="#000000"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.project_navigation">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@drawable/ic_icon"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:usesCleartextTraffic="true">
+        <activity android:name=".RecordActivity">
+        </activity>
+        <activity android:name=".WordCollectionActivity">
+        </activity>
+        <activity android:name=".LoginActivity">
+        </activity>
+        <activity android:name=".WebActivity">
+        </activity>
+        <activity android:name=".ArticleActivity">
+        </activity>
+        <activity
+                android:name=".DictActivity"
+                android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <provider
+                android:name="cn.bmob.v3.util.BmobContentProvider"
+                android:authorities="com.example.project_navigation.BmobContentProvider">
+        </provider>
+    </application>
+
+</manifest>

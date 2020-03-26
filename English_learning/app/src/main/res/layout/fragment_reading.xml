@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".fragment.Fragment_reading">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+                android:text="双语阅读"
+                android:layout_width="match_parent"
+                android:layout_height="69dp" android:id="@+id/textView22" android:textAlignment="center"
+                android:textSize="28sp" android:background="@drawable/rbg"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:typeface="normal" android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textStyle="normal" android:textColor="#5A441CD4"/>
+        <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/r_lv" android:background="#1AC1ECF3"/>
+    </LinearLayout>
+</FrameLayout>
