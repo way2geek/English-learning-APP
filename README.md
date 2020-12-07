@@ -1,2 +1,3 @@
 # English-learning-APP
-This is an Android project implemented by Kotlin
+an English-learning Android app featuring news feed and quick dictionary lookup.
+
